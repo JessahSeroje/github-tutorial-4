@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.box::before {
+  content: "This is the text in ::before";
+  font-size: 40px;
+  color: orange;
+}
+
+.box::after {
+  content: "This is the text in ::after";
+  font-size: 30px;
+  color: teal;
+}
+
+/* This is how to use the ::before and ::after */
+
+.toptext {
+  color: blue;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.toptext::before {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: blue;
+}
+
+.toptext2 {
+  color: rosybrown;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.toptext2::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rosybrown;
+}
+
+/* pseudo element hover styles */
+
+.list {
+  margin: 0;
+  list-style: none;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.list-link {
+  display: inline-flex;
+  align-items: center;
+  color: currentColor;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.list-link:hover {
+  color: #2196f3;
+}
+
+.list-link::before,
+.list-link::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+}
+
+/* Adds and hides eyes icon after the link text */
+.list-link::after {
+  display: none;
+  margin-left: 16px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png");
+}
+
+/* Show arrow icon on hover */
+.list-link:hover::after {
+  display: block;
+}
