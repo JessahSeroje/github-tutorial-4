@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Elements</title>
+    <link rel="stylesheet" href="./css/lecture1.css" />
+  </head>
+  <body>
+    <!-- Element <svg> -->
+    <h2>element</h2>
+    <svg width="400" height="300" style="outline: 2px dashed lightpink">
+      <!-- This is where the svg shapes markup will be. -->
+    </svg>
+
+    <!-- Element <rect> -->
+    <h2>element (rect)</h2>
+    <svg width="400" height="300" style="outline: 2px solid lightblue">
+      <rect
+        width="250"
+        height="150"
+        fill="tomato"
+        stroke="black"
+        stroke-width="4"
+        x="20"
+        y="20"
+        rx="40"
+      />
+    </svg>
+
+    <svg width="400" height="300" style="outline: 2px dashed lightgreen">
+      <rect
+        width="250"
+        height="150"
+        fill="tomato"
+        stroke="#2a2a2a"
+        stroke-width="4"
+        x="20"
+        y="20"
+        rx="40"
+      />
+      <rect
+        width="250"
+        height="150"
+        fill="orange"
+        stroke="#2a2a2a"
+        stroke-width="4"
+        x="120"
+        y="120"
+        rx="60"
+        ry="30"
+      />
+    </svg>
+
+    <!-- Hamburger Menu Icon -->
+    <h2>How to Create Hamburger Menu Icon</h2>
+    <svg width="400" height="200" style="outline: 2px dashed white">
+      <line x1="20" y1="50" x2="380" y2="50" stroke="#ffff" stroke-width="16" />
+      <line x1="20" y1="80" x2="380" y2="80" stroke="#ffff" stroke-width="16" />
+      <line
+        x1="20"
+        y1="110"
+        x2="380"
+        y2="110"
+        stroke="#ffff"
+        stroke-width="16"
+      />
+    </svg>
+    <br />
+    <br />
+    <br />
+    <svg
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:ev="http://www.w3.org/2001/xml-events"
+    >
+      <circle r="75" cx="50%" cy="50%" fill="tomato" />
+
+      <br />
+
+      <!-- Relative Positioning -->
+      <h2>Relative Positioning</h2>
+      <div class="container">
+        <div class="box"></div>
+        <div class="box relative"></div>
+        <div class="box"></div>
+      </div>
+    </svg>
+  </body>
+</html>
